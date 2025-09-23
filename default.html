@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.meta_title }}</title>
+  <meta name="description" content="{{ page.meta_description }}" />
+  <meta property="og:title" content="{{ page.og_title }}" />
+  <meta property="og:image" content="{{ page.og_image }}" />
+  <meta property="twitter:title" content="{{ page.twitter_title }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link href="style-2.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="{{ page.favicon }}" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ page.apple_icon }}" />
+</head>
+
+<body body-theme="light">
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <nav class="navbar_component navbar_hidden">
+      <div class="navbar_bg"></div>
+      <div class="padding-global">
+        <div class="navbar_container">
+          <div class="navbar_body">
+            <div class="navbar_menu">
+              <div class="navbar_top">
+                <a class="navbar_logo">
+                  <img src="{{ page.logo }}" alt="Logo" />
+                </a>
+              </div>
+              <div class="navbar_link-list">
+                <a href="#work" class="navbar_link">{{ page.nav_about }}</a>
+                <a href="#why" class="navbar_link">{{ page.nav_why }}</a>
+                <a href="#do" class="navbar_link">{{ page.nav_what }}</a>
+              </div>
+              <div class="navbar_menu_btn-wrap">
+                <a href="{{ page.cta_link }}" class="button w-inline-block">
+                  <div class="button-text-wrap">
+                    <div class="button-main-text">{{ page.cta_text }}</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="main-wrapper">
+      <section class="section_hero">
+        <div class="padding-global">
+          <div class="container-large">
+            <div class="hero_layout">
+              <div class="hero_content">
+                <div class="text-style-tagline is-m-hero">{{ page.hero_tagline }}</div>
+                <div class="text-style-tagline">{{ page.hero_subtagline }}</div>
+
+                <h1 class="hero_head">{{ page.hero_title }}</h1>
+                <p class="hero_p">{{ page.hero_desc }}</p>
+
+                <div class="hero_subtext text-style-tagline">{{ page.hero_subtext }}</div>
+
+                <div class="hero_button-wrap">
+                  <div class="button-group is-center">
+                    <a href="{{ page.cta_link }}" class="button w-inline-block">
+                      <span class="btn-animate-chars__text is-main">{{ page.cta_text }}</span>
+                    </a>
+                    <a href="#work" class="button ghost w-inline-block">
+                      <span class="btn-animate-chars__text ghost">{{ page.secondary_cta }}</span>
+                    </a>
+                  </div>
+                  <p class="hero_button-subtext">{{ page.hero_button_note }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+            <!-- About Section -->
+      <section id="work" class="section_about">
+        <div class="container-large">
+          <div class="about_content">
+            <h2 class="section_title">{{ page.about_heading }}</h2>
+            <p class="section_desc">{{ page.about_paragraph }}</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+            <!-- Why Us Section -->
+      <section id="why" class="section_why">
+        <div class="container-large">
+          <div class="why_content">
+            <h2 class="section_title">{{ page.why_heading }}</h2>
+            <p class="section_desc">{{ page.why_paragraph }}</p>
+            <ul class="why_list">
+              <li>{{ page.why_point1 }}</li>
+              <li>{{ page.why_point2 }}</li>
+              <li>{{ page.why_point3 }}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- What We Do Section -->
+      <section id="do" class="section_services">
+        <div class="container-large">
+          <div class="services_content">
+            <h2 class="section_title">{{ page.services_heading }}</h2>
+            <div class="services_grid">
+              <div class="service_item">
+                <h3>{{ page.service1_title }}</h3>
+                <p>{{ page.service1_desc }}</p>
+              </div>
+              <div class="service_item">
+                <h3>{{ page.service2_title }}</h3>
+                <p>{{ page.service2_desc }}</p>
+              </div>
+              <div class="service_item">
+                <h3>{{ page.service3_title }}</h3>
+                <p>{{ page.service3_desc }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section_testimonials">
+        <div class="container-large">
+          <div class="testimonials_content">
+            <h2 class="section_title">{{ page.testimonials_heading }}</h2>
+            <div class="testimonials_grid">
+              <div class="testimonial_item">
+                <p class="testimonial_quote">“{{ page.testimonial1_quote }}”</p>
+                <p class="testimonial_author">— {{ page.testimonial1_author }}</p>
+              </div>
+              <div class="testimonial_item">
+                <p class="testimonial_quote">“{{ page.testimonial2_quote }}”</p>
+                <p class="testimonial_author">— {{ page.testimonial2_author }}</p>
+              </div>
+              <div class="testimonial_item">
+                <p class="testimonial_quote">“{{ page.testimonial3_quote }}”</p>
+                <p class="testimonial_author">— {{ page.testimonial3_author }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+            <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container-large">
+          <div class="footer_content">
+            <h2 class="footer_heading">{{ page.footer_heading }}</h2>
+            <p class="footer_subtext">{{ page.footer_subtext }}</p>
+            <a href="{{ page.footer_cta_link }}" class="button w-inline-block">
+              <span class="button-main-text">{{ page.footer_cta_text }}</span>
+            </a>
+            <p class="footer_copy">{{ page.footer_copy }}</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
+
+      
