@@ -1,9 +1,8 @@
 backend:
-  name: github
-  repo: Joseph-Barat/just-train.github.io   # CHANGE this to your GitHub repo name
-  branch: main                  # Or master, if that's your branch
+  name: git-gateway
+  branch: main   # or master if that's your branch
 
-media_folder: "assets/uploads"   # Where uploaded images go
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
