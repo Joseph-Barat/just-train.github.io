@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main   # or master if that's your branch
+  branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -13,6 +13,6 @@ collections:
         label: "Homepage"
         name: "homepage"
         fields:
-          - { label: "Hero Title", name: "hero_title", widget: "string", pattern: ["<!-- cms:hero_title -->([\\s\\S]*?)<!-- /cms:hero_title -->", "<!-- cms:hero_title -->{{value}}<!-- /cms:hero_title -->"] }
-          - { label: "Hero Paragraph", name: "hero_paragraph", widget: "text", pattern: ["<!-- cms:hero_paragraph -->([\\s\\S]*?)<!-- /cms:hero_paragraph -->", "<!-- cms:hero_paragraph -->{{value}}<!-- /cms:hero_paragraph -->"] }
-          - { label: "Hero Subtext", name: "hero_subtext", widget: "string", pattern: ["<!-- cms:hero_subtext -->([\\s\\S]*?)<!-- /cms:hero_subtext -->", "<!-- cms:hero_subtext -->{{value}}<!-- /cms:hero_subtext -->"] }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Paragraph", name: "hero_paragraph", widget: "text" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "string" }
