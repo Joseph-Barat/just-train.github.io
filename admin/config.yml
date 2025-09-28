@@ -6,14 +6,11 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "test"
+    label: "Test Collection"
     files:
       - file: "index.html"
         label: "Homepage"
         name: "homepage"
         fields:
-          - { label: "Hero Title", name: "hero_title", widget: "string" }
-          - { label: "Hero Paragraph", name: "hero_paragraph", widget: "text" }
-          - { label: "Hero Subtext", name: "hero_subtext", widget: "string" }
-
+          - { label: "Title", name: "title", widget: "string" }
